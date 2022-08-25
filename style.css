@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+:root {
+    --clr-primary-500: hsl(238, 40%, 52%);
+    --clr-primary-400: hsl(358, 79%, 66%);
+    --clr-primary-300: hsl(239, 57%, 85%);
+    --clr-primary-200: hsl(357, 100%, 86%);
+
+    --clr-neutral-900: hsl(212, 24%, 26%);
+    --clr-neutral-800: hsl(211, 10%, 45%);
+    --clr-neutral-300: hsl(223, 19%, 93%);
+    --clr-neutral-200: hsl(228, 33%, 97%);
+    --clr-neutral-0: hsl(0, 0%, 100%);
+
+    --ff-primary: 'Rubik', sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word; 
+}
+body {
+    font-family: var(--ff-primary);
+    background-color: var(--clr-neutral-200);
+}
+
+/* Utility classes */
+.grey-text {
+    color: var(--clr-neutral-800);
+}
+/* .container {
+    
+} */
+.flex {
+    display: flex;
+}
+.grid {
+    display: grid;
+}
+
+/* Main */
+.main--container {
+    flex-direction: column;
+    padding: 2rem 4rem;
+}
+.comment-box {
+    /* width: minmax(); */
+    padding: 2rem 4rem;
+    margin: 0.5rem 0;
+    grid-template-columns: auto auto;
+    background-color: var(--clr-neutral-0);
+}
+.info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.commentor-name {
+    font-weight: 700;
+}
+.reply {
+    display: flex;
+    color: var(--clr-primary-500);
+}
+.votes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    min-width: 3rem;
+    background-color: var(--clr-neutral-300);
+    color: var(--clr-primary-500);
+    font-weight: 500;
+    
+}
+.votes p {
+    padding: 0.5rem 0;
+}
